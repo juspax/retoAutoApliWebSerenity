@@ -1,2 +1,2 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Register at the national bookstore and buy a book","Validate the and buy a book","ERROR","2023-03-13T17:56:19.126-05:00[America/Bogota]","0.0","0.83"
+"Make a book purchase","Validate the and buy a book","FAILURE","2023-03-31T09:54:12.069-05:00[America/Bogota]","0.0","0.94"

@@ -1,24 +1,25 @@
 package com.librerianacional.steps;
 
+import com.librerianacional.actions.LibraryBuyAction;
+import com.librerianacional.actions.LibraryRegisterAction;
 import com.librerianacional.models.RegisterModel;
 import com.librerianacional.pageObjects.BuyBookPageObject;
 import com.librerianacional.pageObjects.RegisterPageObject;
 import com.librerianacional.utils.DataListExcel;
 import net.thucydides.core.annotations.Step;
 import org.hamcrest.MatcherAssert;
-
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Map;
 
 import static org.hamcrest.Matchers.containsString;
 
 public class RegisterStep {
 
-    RegisterPageObject registerPagePOM = new RegisterPageObject();
+    LibraryRegisterAction libraryRegisterAction = new LibraryRegisterAction();
+    RegisterPageObject registerPageObject = new RegisterPageObject();
 
-    private BuyBookPageObject buyBookPageObject;
+    LibraryBuyAction libraryBuyAction = new LibraryBuyAction();
 
     public static ArrayList<Map<String, String>> writeExcel = new ArrayList<>();
     @Step
@@ -27,32 +28,32 @@ public class RegisterStep {
     }
     @Step
     public void openApplication() {
-        registerPagePOM.open();
+        registerPageObject.open();
     }
 
     @Step
     public void createRecord(RegisterModel registerUser) {
 
-        registerPagePOM.clicMyAccount();
-        registerPagePOM.clicOnRegister();
-        registerPagePOM.writeEmail(registerUser.getEmail());
-        registerPagePOM.writeName(registerUser.getName());
-        registerPagePOM.writeLastName(registerUser.getLastName());
-        registerPagePOM.selectDocumentType(registerUser.getDocumentType());
-        registerPagePOM.writeDocumentNumber(registerUser.getDocumentNumber());
-        registerPagePOM.writeCellPhone(registerUser.getCellPhone());
-        registerPagePOM.writeLandline(registerUser.getLandLine());
-        registerPagePOM.writePassword(registerUser.getPassword());
-        registerPagePOM.writeConfirmPassword(registerUser.getConfirmPassword());
-        registerPagePOM.clicTermsConditions();
-        registerPagePOM.clicRegisterButton();
-        buyBookPageObject.waitTime();
+        libraryRegisterAction.clicMyAccount();
+        libraryRegisterAction.clicOnRegister();
+        libraryRegisterAction.writeEmail(registerUser.getEmail());
+        libraryRegisterAction.writeName(registerUser.getName());
+        libraryRegisterAction.writeLastName(registerUser.getLastName());
+        libraryRegisterAction.selectDocumentType(registerUser.getDocumentType());
+        libraryRegisterAction.writeDocumentNumber(registerUser.getDocumentNumber());
+        libraryRegisterAction.writeCellPhone(registerUser.getCellPhone());
+        libraryRegisterAction.writeLandline(registerUser.getLandLine());
+        libraryRegisterAction.writePassword(registerUser.getPassword());
+        libraryRegisterAction.writeConfirmPassword(registerUser.getConfirmPassword());
+        libraryRegisterAction.clicTermsConditions();
+        libraryRegisterAction.clicRegisterButton();
+        libraryBuyAction.waitTime();
 
     }
 
     @Step
     public void verifyMessage(String message) {
-        MatcherAssert.assertThat(registerPagePOM.getTextElement(), containsString(message));
+        MatcherAssert.assertThat(libraryRegisterAction.getTextElement(), containsString(message));
     }
 
 

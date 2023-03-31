@@ -151,7 +151,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 16-03-2023 11:53</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 31-03-2023 09:33</span>
     <br style="clear:left"/>
 </div>
 
@@ -203,9 +203,9 @@ To Verify that the user was successfully registered and buy a book
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-exclamation-triangle-fill error-icon fa-2x' title='ERROR'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">Validate the and buy a book
+                                <span class="error-color">Validate the and buy a book
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -222,27 +222,53 @@ To Verify that the user was successfully registered and buy a book
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">No such element exception: no such element: Unable to locate element: {'method':'xpath','selector':'(//input[@formcontrolname='buscar'])[2]'}</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall"
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="bi bi-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>org.openqa.selenium.NoSuchElementException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>com.librerianacional.pageObjects.BuyBookPageObject.writeBook(BuyBookPageObject.java:70)<br />com.librerianacional.steps.BuyBookStep.buyBook(BuyBookStep.java:44)<br />com.librerianacional.definitions.RegisterDefinitions.validateTheBuyABook(RegisterDefinitions.java:56)<br />io.cucumber.java.Invoker.doInvoke(Invoker.java:66)<br />io.cucumber.java.Invoker.invoke(Invoker.java:24)<br />io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)<br />io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)<br />io.cucumber.core.runner.TestStep.run(TestStep.java:57)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)<br />io.cucumber.core.runner.TestCase.run(TestCase.java:84)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java:75)<br />io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)<br />io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)<br />io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)<br />io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:259)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:59)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+                    <div class="panel-body">
+                        <a href="pagesource6424365201782201234.html" target="_blank" class="btn btn-info">HTML Source</a>
+                    </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="42eac41185468cddb72eadb959a219c2ccd2474d6ea12a366205295e20304f82.png" title=" Given I access the initial platform to register" width="1712"/>
-                <img src="42eac41185468cddb72eadb959a219c2ccd2474d6ea12a366205295e20304f82.png" title=" Open application" width="1712"/>
-                <img src="42eac41185468cddb72eadb959a219c2ccd2474d6ea12a366205295e20304f82.png" title=" Open excel" width="1712"/>
-                <img src="feb956dfe004a439f9371ab4400b692ba8632b3f8467f154167a3c8f081f2d6c.png" title=" Open excel (completed)" width="1712"/>
-                <img src="2f19988d5ce3baf63ac481fa21e0c2f41004e8b0ce8efaa1e90043f0be2e7e07.png" title=" Read excel" width="1712"/>
-                <img src="2f19988d5ce3baf63ac481fa21e0c2f41004e8b0ce8efaa1e90043f0be2e7e07.png" title=" Given I access the initial platform to register (completed)" width="1712"/>
-                <img src="22ae457cd6c7397ec02f739d6905acbcfb9c3673b618bdc189be1d682ec54944.png" title=" When validate the buy a book" width="1712"/>
-                <img src="2ce8cc9bd9c6da7783c28f7b2ea6768fd27ad4f2eb92ae0ab1f32b7f1c44b158.png" title=" Enter login: com.librerianacional.models.RegisterModel@4300e240" width="1712"/>
-                <img src="11599ef2c2ecf9fcb9ca74e558d1427cc8e46d7197069038e918aa5e258c0491.png" title=" Enter login: com.librerianacional.models.RegisterModel@4300e240 (completed)" width="1712"/>
-                <img src="492f49dd77ad48c04d86933ca08893ccdc97a72694d9fb41ccad543175500ec0.png" title=" Buy book: com.librerianacional.models.BuyBookModel@45571cfc" width="1712"/>
-                <img src="91f2526cdb3408375c946c5740d70b11cbb3e162224ad27cc601232f6c19e54d.png" title=" Buy book: com.librerianacional.models.BuyBookModel@45571cfc" width="1712"/>
-                <img src="4ef97e042fa9cff870770fc113924dab5ca74ecf26d2342e14c25473f3e6f7a2.png" title=" Buy book: com.librerianacional.models.BuyBookModel@45571cfc" width="1712"/>
-                <img src="996989e6dbda25651ea9ec2fe3a0c90214b067fbed310997068f2dbba3a057b7.png" title=" Buy book: com.librerianacional.models.BuyBookModel@45571cfc" width="1712"/>
-                <img src="82277a4c11c27e636369636bf744badd08897634dab9f6456a57c1c6b2428ada.png" title=" Buy book: com.librerianacional.models.BuyBookModel@45571cfc" width="1712"/>
-                <img src="f9245fe32ae94a420babcdee64985120df05487560d9e53510d9928daeb19fca.png" title=" Buy book: com.librerianacional.models.BuyBookModel@45571cfc" width="1712"/>
-                <img src="e531765f631310dc82076fa45f53c3fbb7664c84734087fd3fa9f5a3b2cf8d53.png" title=" Buy book: com.librerianacional.models.BuyBookModel@45571cfc (completed)" width="1712"/>
-                <img src="e531765f631310dc82076fa45f53c3fbb7664c84734087fd3fa9f5a3b2cf8d53.png" title=" When validate the buy a book (completed)" width="1712"/>
-                <img src="e531765f631310dc82076fa45f53c3fbb7664c84734087fd3fa9f5a3b2cf8d53.png" title=" Then verify the books and the amount of the purchase" width="1712"/>
-                <img src="e531765f631310dc82076fa45f53c3fbb7664c84734087fd3fa9f5a3b2cf8d53.png" title=" Check element: com.librerianacional.models.BuyBookModel@f48a080: <span class='success-color'>SUCCESS</span>" width="1712"/>
+                <img src="23eb2ca4738112cb43da86963d6e2f44e185c887f8954d92981b0b9be3748464.png" title=" Given I access the initial platform to register" width="1712"/>
+                <img src="23eb2ca4738112cb43da86963d6e2f44e185c887f8954d92981b0b9be3748464.png" title=" Open application" width="1712"/>
+                <img src="ce6321bfda9a55ca6df232129fd036911b5e73ecaef900aa47c8d5204bce4834.png" title=" Open excel" width="1712"/>
+                <img src="ce6321bfda9a55ca6df232129fd036911b5e73ecaef900aa47c8d5204bce4834.png" title=" Read excel" width="1712"/>
+                <img src="0264efc6f9fd86fe4178543c6ddf46bdaa8d0722e9d4962368ce74a72b594365.png" title=" Given I access the initial platform to register (completed)" width="1712"/>
+                <img src="313dd10330c412009b7387c50472763003cc0a22219fd8ccefe9f1f3db047482.png" title=" When validate the buy a book" width="1712"/>
+                <img src="313dd10330c412009b7387c50472763003cc0a22219fd8ccefe9f1f3db047482.png" title=" Enter login: com.librerianacional.models.RegisterModel@1883871b" width="1712"/>
+                <img src="388d89dff5f7c68b487b41e3d8a606e39a8e14b033e165e8eef215956893b2da.png" title=" Enter login: com.librerianacional.models.RegisterModel@1883871b (completed)" width="1712"/>
+                <img src="25f6e44ca9e03ac2d1c966c4ecfc720cf72a16dd5b3053cb25680005de1ef236.png" title=" Buy book: com.librerianacional.models.BuyBookModel@56d6a1b1: <span class='error-color'>ERROR</span>" width="1712"/>
             </div>
         </div>
 

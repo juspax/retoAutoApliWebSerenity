@@ -12,8 +12,5 @@ Feature: Register at the national bookstore and buy a book
     When register on the platform
     Then Verify correct user registration "Bienvenido a tu cuenta"
 
-  @CaseTwo
-  Scenario: Validate the and buy a book
-    When validate the buy a book
-    Then verify the books and the amount of the purchase
+
 

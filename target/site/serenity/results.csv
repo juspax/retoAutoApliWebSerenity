@@ -1,3 +1,4 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Register at the national bookstore and buy a book","Validate the registration to the platform","SUCCESS","2023-03-16T11:52:20.449-05:00[America/Bogota]","0.0","55.72"
-"Register at the national bookstore and buy a book","Validate the and buy a book","SUCCESS","2023-03-16T11:53:16.276-05:00[America/Bogota]","0.0","90.81"
+"Make a book purchase","Validate the and buy a book","SUCCESS","2023-03-31T11:24:02.648-05:00[America/Bogota]","0.0","75.63"
+"Register at the national bookstore and buy a book","Validate the and buy a book","ERROR","2023-03-31T09:33:36.769-05:00[America/Bogota]","0.0","20.35"
+"Register at the national bookstore and buy a book","Validate the registration to the platform","SUCCESS","2023-03-31T11:13:12.263-05:00[America/Bogota]","0.0","37.86"
