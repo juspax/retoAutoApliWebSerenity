@@ -25,8 +25,8 @@ buildscript {
 }
 
 ext {
-    serenityVersion = "3.3.4"
-    serenityCucumberVersion = "3.3.4"
+    serenityVersion = "3.6.22"
+    serenityCucumberVersion = "3.6.22"
     serenityEnsureVersion = "3.2.5"
     slf4jSimpleVersion = "1.7.36"
     junitVersion = "4.13.2"
